@@ -1,8 +1,10 @@
 import { Router }from 'express';
 const router = Router();
 
-import defaultRoute from './default-route.js';
+import groupRoute from './group-route.js';
+import todoRoute from './todo-route.js';
 
-router.use('/default', defaultRoute);
+router.use('/groups', groupRoute);
+router.use('/todos', todoRoute);
 
 export default router;
